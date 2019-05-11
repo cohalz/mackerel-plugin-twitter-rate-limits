@@ -1,4 +1,4 @@
-# mackerel-twitter-rate-limits-checker
+# mackerel-twitter-rate-limits-agent
 
 An agent for posts Twitter API rate limits to Mackerel's service metrics.
 
