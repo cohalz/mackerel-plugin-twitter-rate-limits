@@ -28,6 +28,7 @@ func main() {
 	}
 
 	response, _ := api.GetRateLimits(families)
+	now := time.Now().Unix()
 
 	for i := range resources {
 		resource := response.Resources[families[i]][resources[i]]
@@ -35,7 +36,7 @@ func main() {
 		r := strings.NewReplacer("/", "_", ":", "")
 		metricName := fmt.Sprintf("twitter.rate_limits.%s", r.Replace(resources[i][1:]))
 
-		fmt.Printf("%s\t%d\t%d\n", metricName, resource.Remaining, time.Now().Unix())
+		fmt.Printf("%s\t%d\t%d\n", metricName, resource.Remaining, now)
 	}
 
 }
