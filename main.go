@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/cohalz/mackerel-plugin-twitter-rate-limits/lib"
+	twitterratelimits "github.com/cohalz/mackerel-plugin-twitter-rate-limits/lib"
 )
 
 func main() {
