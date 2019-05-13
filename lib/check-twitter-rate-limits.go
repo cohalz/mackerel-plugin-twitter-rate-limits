@@ -1,4 +1,4 @@
-package main
+package twitterratelimits
 
 import (
 	"fmt"
@@ -6,10 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ChimeraCoder/anaconda"
+	"github.com/cohalz/anaconda"
 )
 
-func main() {
+// Do the plugin
+func Do() {
 
 	api := anaconda.NewTwitterApiWithCredentials(
 

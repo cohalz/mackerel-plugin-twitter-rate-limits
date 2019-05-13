@@ -1,5 +1,2 @@
-deps:
-	dep ensure -vendor-only
-
-build: deps
-	GOARCH=amd64 GOOS=linux go build -o bin/rate_limits_checker
+build: 
+	GOARCH=amd64 GOOS=linux go build -o bin/mackerel-plugin-twitter-rate-limits
