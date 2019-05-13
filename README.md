@@ -1,6 +1,6 @@
-# mackerel-twitter-rate-limits-agent
+# mackerel-plugin-twitter-rate-limits
 
-An agent for posts Twitter API rate limits to Mackerel's service metrics.
+A Mackerel plugin for posts Twitter API rate limits to service metrics.
 
 ## build
 
